@@ -6,41 +6,116 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Biodata</h1>
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Biodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 600px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        td.label {
+            font-weight: bold;
+            width: 30%;
+            color: #555;
+        }
+        td.colon {
+            width: 5%;
+            text-align: center;
+        }
+        .btn-kembali {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn-kembali:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
 
-<form action="/action_page.php">
-  <label for="fname">Nama:</label>
-  <input type="text" id="fname" name="fname" value="nama"><br><br>
-  <label for="Alamat">Alamat:</label>
-  <textarea type="textarea" id="Alamat" name="Alamat"  ></textarea>><br><br>
-  
-<label for="jname">jurusan:</label>
-<select value={jurusan} onChange={handleChange}>
-        <option value="RPL">RPL</option>
-        <option value="TKJ">TKJ</option>
-        <option value="TKR">TKR</option>
-        <option value="TSM">TSM</option>
-        <option value="TEI">TEI</option>
-    </select>
-<form action="/action_page.php"><br>
-  <label>Jenis Kelamin:</label>
-  <input type="radio" id="html" name="fav_language" value="P">
-  <label for="L">L</label>
-  <input type="radio"P id="P" name="fav_language" value="P">
-  <label for="P">P</label>
-  <input type="radio" id="B" name="fav_language" value="B">
-  <label for="B">B</label><br>
+<div class="container">
+    <h1>Hasil Biodata</h1>
+    
+    <table>
+        <tr>
+            <td class="label">Nama</td>
+            <td class="colon">:</td>
+            <td>Niswatun Rosidah</td>
+        </tr>
+        <tr>
+            <td class="label">Alamat</td>
+            <td class="colon">:</td>
+            <td>Jl. A. Yani RT 9 RW 3 Senggreng, Sumberpucung</td>
+        </tr>
+        <tr>
+            <td class="label">Jurusan</td>
+            <td class="colon">:</td>
+            <td>RPL (Rekayasa Perangkat Lunak)</td>
+        </tr>
+        <tr>
+            <td class="label">Jenis Kelamin</td>
+            <td class="colon">:</td>
+            <td>Perempuan (P)</td>
+        </tr>
+        <tr>
+            <td class="label">Berat Badan (Bb)</td>
+            <td class="colon">:</td>
+            <td>36 kg</td>
+        </tr>
+        <tr>
+            <td class="label">Tinggi Badan (Tb)</td>
+            <td class="colon">:</td>
+            <td>147 cm</td>
+        </tr>
+        <tr>
+            <td class="label">Hobi</td>
+            <td class="colon">:</td>
+            <td>Makeup</td>
+        </tr>
+        <tr>
+            <td class="label">No HP</td>
+            <td class="colon">:</td>
+            <td>085649118242</td>
+        </tr>
+    </table>
 
-  <label for="BB">Bb:</label>
-  <input type="number" id="Bb" name="Bb" value=""><br><br>
-  <label for="TB">Tb:</label>
-  <input type="number" id="Tb" name="Tb" value=""><br><br>
-  <label for="HOBI">Hobi:</label>
-  <input type="text" id="hobi" name="hobi" value=""><br><br>
-  <label for="NO HP">No HP:</label>
-  <input type="number" id="No HP" name="No HP" value=""><br><br>
-  
-    </form>
-<input type="submit" value="Submit">
+    <!-- Tombol untuk kembali ke form awal jika diperlukan -->
+    <a href="form_biodata.html" class="btn-kembali">Kembali ke Form</a>
+</div>
+
+</body>
+</html>
+
 </body>
 </html>
