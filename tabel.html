@@ -1,366 +1,724 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tabel data biodata siwa</title>
-</head>
-<body>
-    <style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-  text-align: left;
-}
-</style>
-
-</head>
-<body>
-
-<h2>Table Data Biodata Siswa</h2>
-
-<table style="width: 35%">
-  
-  <tr>
-    <th style="background-color:rgb(247, 163, 202);">Field/Atribut</th>
-    <th style="background-color:rgb(247, 163, 202);">Keterangan/Hasil Input</th> 
-
-  </tr>
-  <tr>
-    <td>Nama:</td>
-    <td>Niswatun</td>
-  </tr>
-  <tr>
-    <td>Alamat:</td>
-    <td>Malang Desa Senggreng</td>
-  </tr>
-  <tr>
-    <td>Jurusan:</td>
-    <td>RPL</td>
-  </tr>
-<tr>
-    <td>Jenis Kelamin:</td>
-    <td>Perempuan</td>
-</tr>
-<tr>
-    <td>Tinggi Badan (cm):</td>
-    <td>148</td>
-</tr>
-<tr>
-    <td>Berat Badan (kg)</td>
-    <td>33</td>
-</tr>
-<tr>
-    <td>Hobi:</td>
-    <td>Makeup,Menggambar</td>
-</tr>
-<tr>
-    <td>No. HP</td>
-    <td>085649118242</td>
-</tr>
-</tr>
-     <th colspan="2">Status: Data berhasil divalidasi dan direkap ke dalam tabel.</th>
-</table>
-
-</table>
-</html>
-
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rekapitulasi Data Biodata </title>
-</head>
-<body>
-    <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
     <meta charset="UTF-8">
-    <title>Rekapitulasi Data Siswa</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-family: Arial, sans-serif;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #111;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-            text-align: center;
-        }
-        /* Kelas untuk menebalka teks */
-        .bold-text {
-            font-weight: bold;
-        }
-        /* Kelas warna latar belakang baby pink untuk kolom pertama */
-        .bg-baby-pink {
-            background-color: #FFC5D3;
-            vertical-align: middle;
-        }
-        
-        .center-text {
-            text-align: center;
-        } 
-    </style>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Tabel Data Biodata Siswa 🌸</title>
+
+    <!-- CSS UTAMA -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
 </head>
+
+
 <body>
-    <h2>Rekapitulasi Data Biodata Dan Fisik Siswa</h2>
 
-    <table>
-        <thead>
-            <!-- Baris Judul Utama -->
-            <tr>
-            
-            </tr>
-            <!-- Baris Header Kolom -->
-            <tr>
-                <th style="background-color:rgb(130, 213, 252);"class="bold-text">Kategori Data</th>
-                <th style="background-color:rgb(130, 213, 252);" class="bold-text">Atribut Form</th>
-                <th style="background-color:rgb(130, 213, 252);"colspan="2" class="bold-text">Hasil Isian</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- BARIS IDENTITAS PRIBADI (3 Baris) -->
-            <tr>
-                <td rowspan="3" class="bold-text bg-baby-pink">Identitas Pribadi</td>
-                <td>Nama</td>
-                <td colspan="2">Niswatun Rosidah</td>
-            </tr>
-            <tr>
-                <td>Alamat</td>
-                <td colspan="2">Malang, Desa Senggreng</td>
-            </tr>
-            <tr>
-                <td>No. HP</td>
-                <td colspan="2">085649118242</td>
-            </tr>
 
-            <!-- BARIS AKADEMIK -->
-            <tr>
-                <td class="bold-text bg-baby-pink">Akademik</td>
-                <td>Jurusan</td>
-                <td colspan="2">RPL</td>
-            </tr>
+    <!-- ==============================
+         DEKORASI
+    =============================== -->
 
-            <!-- BARIS PREFERENSI -->
-            <tr>
-                <td class="bold-text bg-baby-pink">Preferensi</td>
-                <td>Jenis Kelamin</td>
-                <td colspan="2">Perempuan</td>
-            </tr>
+    <div class="dekorasi awan">
+        ☁️
+    </div>
 
-            <!-- BARIS DATA FISIK (Menggunakan Split Cell untuk Tinggi dan Berat) -->
-            <tr>
-                <td rowspan="2" class="bold-text bg-baby-pink">Data Fisik</td>
-                <td rowspan="2" style="vertical-align: middle;">Pengukuran Badan</td>
-                <td>Tinggi</td>
-                <td>143</td>
-            </tr>
-            <tr>
-                <td>Berat</td>
-                <td>33</td>
-            </tr>
+    <div class="dekorasi bintang">
+        ⭐
+    </div>
 
-            <!-- BARIS LAIN-LAIN -->
-            <tr>
-                <td class="bold-text bg-baby-pink">Lain-lain</td>
-                <td>Hobi</td>
-                <td colspan="2">Makeup & Menggambar</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="dekorasi bunga">
+        🌸
+    </div>
 
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<title>Tabel Kompleks - Merge & Split Cell</title>
-<style>
-  * { box-sizing: border-box; }
-  body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #eef3f7;
-    margin: 0;
-    padding: 40px 20px;
-    color: #1f2a37;
-  }
-  .wrapper {
-    max-width: 950px;
-    margin: 0 auto;
-    background: #ffffff;
-    border-radius: 14px;
-    padding: 32px 36px 40px;
-    box-shadow: 0 8px 24px rgba(20, 40, 70, 0.08);
-  }
-  h1 {
-    text-align: center;
-    font-size: 22px;
-    color: #2f3d8f;
-    margin-bottom: 6px;
-  }
-  h1 .merge { color: #b02a2a; }
-  h1 .split { color: #1f8a3d; }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px;
-    margin-top: 24px;
-  }
-  th, td {
-    border: 1px solid #b9c2d0;
-    padding: 12px 14px;
-    text-align: left;
-    vertical-align: middle;
-  }
-  thead th {
-    background: #4a5bc4;
-    color: #ffffff;
-    font-weight: bold;
-  }
-  td.kategori {
-    background: rgba(74, 91, 196, 0.10);
-    font-weight: bold;
-    color: #2f3d8f;
-    width: 18%;
-  }
-  td.sub {
-    font-weight: 600;
-    width: 22%;
-    color: #333333;
-  }
-  td.atribut {
-    font-weight: bold;
-    width: 25%;
-    color: #333333;
-  }
-  td.hasil {
-    color: #1f2a37;
-  }
+    <div class="dekorasi pita">
+        🎀
+    </div>
 
-  /* Merge (merah) - garis penanda hasil rowspan/colspan */
-  td.merge-mark {
-    border: 3px solid #c0392b !important;
-  }
 
-  /* Split (hijau) - simulasi split cell dalam satu <td> */
-  td.split-cell {
-    padding: 8px;
-  }
-  .split-wrapper {
-    border: 2px dashed #1f8a3d;
-    border-radius: 6px;
-    padding: 8px;
-  }
-  .split-label {
-    font-size: 12px;
-    font-weight: bold;
-    color: #1f8a3d;
-    margin-bottom: 6px;
-  }
-  .split-item {
-    border: 1px solid #b9c2d0;
-    border-radius: 4px;
-    padding: 6px 10px;
-    margin-bottom: 6px;
-    background: #fafffa;
-  }
-  .split-item:last-child { margin-bottom: 0; }
-  .split-item b { color: #1f2a37; }
 
-  .keterangan {
-    margin-top: 22px;
-    font-size: 13px;
-    text-align: center;
-    color: #333;
-  }
-  .keterangan .merah { color: #c0392b; font-weight: bold; }
-  .keterangan .hijau { color: #1f8a3d; font-weight: bold; }
-</style>
-</head>
-<body>
-<div class="wrapper">
-  <h1>Tantangan Tabel Kompleks =&gt; <span class="merge">Merge (Merah)</span> &amp; <span class="split">Split (Hijau)</span></h1>
+    <!-- ==============================
+         HALAMAN
+    =============================== -->
 
-  <table>
-    <thead>
-      <tr>
-        <th>Kategori Utama</th>
-        <th>Sub Kategori</th>
-        <th>Atribut Isian</th>
-        <th>Detail Data / Nilai</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Rowspan 3 : DATA SISWA -->
-      <tr>
-        <td class="kategori merge-mark" rowspan="3">DATA SISWA<br><small></small></td>
-        <td class="sub" rowspan="2">Identitas Utama</td>
-        <td class="atribut">Nama Lengkap</td>
-        <td class="hasil">Niswatun Rosidah</td>
-      </tr>
-      <tr>
-        <td class="atribut">Alamat Rumah</td>
-        <td class="hasil">Desa Senggreng</td>
-      </tr>
-      <tr>
-        <td class="atribut merge-mark" colspan="2">Kontak Aktif: 085649118242 <small></small></td>
-        <td class="hasil">Hobi: Makeup & Face Painting</td>
-      </tr>
+    <div class="page">
 
-      <!-- Akademik -->
-      <tr>
-        <td class="kategori">Akademik</td>
-        <td class="sub">Jurusan PPLG</td>
-        <td class="atribut">Pilihan Kelas</td>
-        <td class="hasil">RPL (Rekayasa Perangkat Lunak)</td>
-      </tr>
 
-      <!-- Preferensi -->
-      <tr>
-        <td class="kategori">Preferensi</td>
-        <td class="sub">Gender</td>
-        <td class="atribut">Jenis Kelamin</td>
-        <td class="hasil">Perempuan</td>
-      </tr>
+        <!-- ==============================
+             HEADER
+        =============================== -->
 
-      <!-- Antropometri dengan split cell -->
-      <tr>
-        <td class="kategori">Antropometri</td>
-        <td class="sub">Pengukuran Fisik</td>
-        <td class="atribut">Parameter Badan</td>
-        <td class="hasil split-cell">
-          <div class="split-wrapper">
-            <div class="split-label">SPLIT CELL (Dipecah jadi 2 sub-sel):</div>
-            <div class="split-item"><b>Tinggi Badan:</b> 146 cm</div>
-            <div class="split-item"><b>Berat Badan:</b> 33 kg</div>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+        <header class="page-header">
 
-  <div class="keterangan">
-    Keterangan: Kotak bergaris <span class="merah">Merah</span> adalah hasil <b>Merge Cell</b>,
-    sedangkan kotak bergaris <span class="hijau">Hijau</span> adalah simulasi <b>Split Cell</b>.
-  </div>
-</div>
+            <h1>
+                📊 Tabel Data Biodata Siswa
+            </h1>
+
+            <p>
+                Rekapitulasi data biodata siswa ✨
+            </p>
+
+        </header>
+
+
+
+        <!-- ==============================
+             TABEL DATA BIODATA
+        =============================== -->
+
+        <div class="tabel-card">
+
+            <h2>
+                📋 Data Biodata Siswa
+            </h2>
+
+
+            <div class="table-responsive">
+
+                <table class="tabel-biodata">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Field / Atribut
+                            </th>
+
+                            <th>
+                                Keterangan / Hasil Input
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                👤 Nama
+                            </td>
+
+                            <td>
+                                Niswatun Rosidah
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                🏠 Alamat
+                            </td>
+
+                            <td>
+                                Malang, Desa Senggreng
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                🎓 Jurusan
+                            </td>
+
+                            <td>
+                                RPL
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                🧑 Jenis Kelamin
+                            </td>
+
+                            <td>
+                                Perempuan
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                📏 Tinggi Badan
+                            </td>
+
+                            <td>
+                                148 cm
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                ⚖️ Berat Badan
+                            </td>
+
+                            <td>
+                                33 kg
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                🎨 Hobi
+                            </td>
+
+                            <td>
+                                Makeup & Menggambar
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                📱 No. HP
+                            </td>
+
+                            <td>
+                                085649118242
+                            </td>
+
+                        </tr>
+
+
+                        <tr class="status-row">
+
+                            <th colspan="2">
+
+                                ✅ Status:
+                                Data berhasil divalidasi
+                                dan direkap ke dalam tabel.
+
+                            </th>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==============================
+             TABEL REKAPITULASI
+        =============================== -->
+
+        <div class="tabel-card">
+
+            <h2>
+                📑 Rekapitulasi Data Biodata
+            </h2>
+
+            <p class="tabel-keterangan">
+                Data biodata dan fisik siswa
+            </p>
+
+
+            <div class="table-responsive">
+
+                <table class="tabel-rekap">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Kategori Data
+                            </th>
+
+                            <th>
+                                Atribut Form
+                            </th>
+
+                            <th colspan="2">
+                                Hasil Isian
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- IDENTITAS -->
+
+                        <tr>
+
+                            <td
+                                rowspan="3"
+                                class="kategori"
+                            >
+                                👤 Identitas Pribadi
+                            </td>
+
+                            <td>
+                                Nama
+                            </td>
+
+                            <td colspan="2">
+                                Niswatun Rosidah
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Alamat
+                            </td>
+
+                            <td colspan="2">
+                                Malang, Desa Senggreng
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                No. HP
+                            </td>
+
+                            <td colspan="2">
+                                085649118242
+                            </td>
+
+                        </tr>
+
+
+                        <!-- AKADEMIK -->
+
+                        <tr>
+
+                            <td class="kategori">
+                                🎓 Akademik
+                            </td>
+
+                            <td>
+                                Jurusan
+                            </td>
+
+                            <td colspan="2">
+                                RPL
+                                (Rekayasa Perangkat Lunak)
+                            </td>
+
+                        </tr>
+
+
+                        <!-- PREFERENSI -->
+
+                        <tr>
+
+                            <td class="kategori">
+                                🧑 Preferensi
+                            </td>
+
+                            <td>
+                                Jenis Kelamin
+                            </td>
+
+                            <td colspan="2">
+                                Perempuan
+                            </td>
+
+                        </tr>
+
+
+                        <!-- DATA FISIK -->
+
+                        <tr>
+
+                            <td
+                                rowspan="2"
+                                class="kategori"
+                            >
+                                📏 Data Fisik
+                            </td>
+
+                            <td
+                                rowspan="2"
+                                class="tengah"
+                            >
+                                Pengukuran Badan
+                            </td>
+
+                            <td>
+                                Tinggi
+                            </td>
+
+                            <td>
+                                148 cm
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Berat
+                            </td>
+
+                            <td>
+                                33 kg
+                            </td>
+
+                        </tr>
+
+
+                        <!-- LAIN-LAIN -->
+
+                        <tr>
+
+                            <td class="kategori">
+                                🎨 Lain-lain
+                            </td>
+
+                            <td>
+                                Hobi
+                            </td>
+
+                            <td colspan="2">
+                                Makeup & Menggambar
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==============================
+             TABEL MERGE & SPLIT
+        =============================== -->
+
+        <div class="tabel-card">
+
+            <h2>
+                🔀 Tantangan Tabel
+            </h2>
+
+            <p class="tabel-keterangan">
+                Contoh Merge Cell dan Split Cell
+            </p>
+
+
+            <div class="table-responsive">
+
+                <table class="tabel-kompleks">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Kategori Utama
+                            </th>
+
+                            <th>
+                                Sub Kategori
+                            </th>
+
+                            <th>
+                                Atribut Isian
+                            </th>
+
+                            <th>
+                                Detail Data / Nilai
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- DATA SISWA -->
+
+                        <tr>
+
+                            <td
+                                class="kategori merge-mark"
+                                rowspan="3"
+                            >
+                                DATA SISWA
+                            </td>
+
+                            <td
+                                class="sub"
+                                rowspan="2"
+                            >
+                                Identitas Utama
+                            </td>
+
+                            <td class="atribut">
+                                Nama Lengkap
+                            </td>
+
+                            <td class="hasil">
+                                Niswatun Rosidah
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td class="atribut">
+                                Alamat Rumah
+                            </td>
+
+                            <td class="hasil">
+                                Desa Senggreng
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td
+                                class="sub merge-mark"
+                                colspan="2"
+                            >
+                                Kontak Aktif:
+                                085649118242
+                            </td>
+
+                            <td class="hasil">
+                                Hobi:
+                                Makeup & Menggambar
+                            </td>
+
+                        </tr>
+
+
+                        <!-- AKADEMIK -->
+
+                        <tr>
+
+                            <td class="kategori">
+                                🎓 Akademik
+                            </td>
+
+                            <td class="sub">
+                                Jurusan RPL
+                            </td>
+
+                            <td class="atribut">
+                                Pilihan Kelas
+                            </td>
+
+                            <td class="hasil">
+                                RPL
+                                (Rekayasa Perangkat Lunak)
+                            </td>
+
+                        </tr>
+
+
+                        <!-- PREFERENSI -->
+
+                        <tr>
+
+                            <td class="kategori">
+                                🧑 Preferensi
+                            </td>
+
+                            <td class="sub">
+                                Gender
+                            </td>
+
+                            <td class="atribut">
+                                Jenis Kelamin
+                            </td>
+
+                            <td class="hasil">
+                                Perempuan
+                            </td>
+
+                        </tr>
+
+
+                        <!-- ANTROPOMETRI -->
+
+                        <tr>
+
+                            <td class="kategori">
+                                📏 Antropometri
+                            </td>
+
+                            <td class="sub">
+                                Pengukuran Fisik
+                            </td>
+
+                            <td class="atribut">
+                                Parameter Badan
+                            </td>
+
+                            <td class="hasil split-cell">
+
+                                <div class="split-wrapper">
+
+                                    <div class="split-label">
+                                        SPLIT CELL
+                                    </div>
+
+                                    <div class="split-item">
+
+                                        <b>
+                                            Tinggi Badan:
+                                        </b>
+
+                                        148 cm
+
+                                    </div>
+
+                                    <div class="split-item">
+
+                                        <b>
+                                            Berat Badan:
+                                        </b>
+
+                                        33 kg
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <div class="keterangan">
+
+                🔴 <b>Merah</b> =
+                Merge Cell
+
+                &nbsp;&nbsp;
+
+                🟢 <b>Hijau</b> =
+                Split Cell
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==============================
+             NAVIGASI
+        =============================== -->
+
+        <div class="navigation">
+
+
+            <a
+                href="index.html"
+                class="tombol tombol-home"
+            >
+                🏠 Halaman Utama
+            </a>
+
+
+            <a
+                href="form_biodata.html"
+                class="tombol tombol-form"
+            >
+                ✏️ Form Biodata
+            </a>
+
+
+            <a
+                href="hasil_biodata.html"
+                class="tombol tombol-tabel"
+            >
+                📊 Hasil Biodata
+            </a>
+
+
+        </div>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            Dibuat dengan ❤️
+            & Banyak Senyuman ✨
+
+        </footer>
+
+
+    </div>
+
+
 </body>
-</html>
 
-</body>
-</html>
-
-</body>
 </html>

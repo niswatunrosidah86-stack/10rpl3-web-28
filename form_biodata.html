@@ -1,46 +1,306 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>biodata siswa</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Biodata Siswa 🌸</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
-   <h1>Biodata</h1>
 
-<form action="/action_page.php">
-  <label for="fname">Nama:</label>
-  <input type="text" id="fname" name="fname" value="nama"><br><br>
-  <label for="Alamat">Alamat:</label>
-  <textarea type="textarea" id="Alamat" name="Alamat"  ></textarea>><br><br>
-  
-<label for="jname">jurusan:</label>
-<select value={jurusan} onChange={handleChange}>
-        <option value="RPL">RPL</option>
-        <option value="TKJ">TKJ</option>
-        <option value="TKR">TKR</option>
-        <option value="TSM">TSM</option>
-        <option value="TEI">TEI</option>
-    </select>
-<form action="/action_page.php"><br>
-  <label>Jenis Kelamin:</label>
-  <input type="radio" id="html" name="fav_language" value="P">
-  <label for="L">L</label>
-  <input type="radio"P id="P" name="fav_language" value="P">
-  <label for="P">P</label>
-  <input type="radio" id="B" name="fav_language" value="B">
-  <label for="B">B</label><br>
+    <!-- DEKORASI -->
+    <div class="dekorasi awan">☁️</div>
+    <div class="dekorasi bintang">⭐</div>
+    <div class="dekorasi bunga">🌸</div>
+    <div class="dekorasi pita">🎀</div>
 
-  <label for="BB">Bb:</label>
-  <input type="number" id="Bb" name="Bb" value=""><br><br>
-  <label for="TB">Tb:</label>
-  <input type="number" id="Tb" name="Tb" value=""><br><br>
-  <label for="HOBI">Hobi:</label>
-  <input type="text" id="hobi" name="hobi" value=""><br><br>
-  <label for="NO HP">No HP:</label>
-  <input type="number" id="No HP" name="No HP" value=""><br><br>
-  
-    </form>
-<input type="submit" value="Submit">
+
+    <div class="page">
+
+        <!-- JUDUL -->
+        <header class="page-header">
+
+            <h1>
+                📋 Biodata Siswa
+            </h1>
+
+            <p>
+                Silakan isi data diri kamu dengan lengkap ✨
+            </p>
+
+        </header>
+
+
+        <!-- FORM -->
+        <div class="card">
+
+            <form action="/action_page.php">
+
+
+                <!-- NAMA -->
+                <div class="form-group">
+
+                    <label for="fname">
+                        👤 Nama:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fname"
+                        name="fname"
+                        placeholder="Masukkan nama lengkap"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- ALAMAT -->
+                <div class="form-group">
+
+                    <label for="Alamat">
+                        🏠 Alamat:
+                    </label>
+
+                    <textarea
+                        id="Alamat"
+                        name="Alamat"
+                        placeholder="Masukkan alamat lengkap"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- JURUSAN -->
+                <div class="form-group">
+
+                    <label for="jurusan">
+                        🎓 Jurusan:
+                    </label>
+
+                    <select
+                        id="jurusan"
+                        name="jurusan"
+                        required
+                    >
+
+                        <option value="">
+                            -- Pilih Jurusan --
+                        </option>
+
+                        <option value="RPL">
+                            RPL
+                        </option>
+
+                        <option value="TKJ">
+                            TKJ
+                        </option>
+
+                        <option value="TKR">
+                            TKR
+                        </option>
+
+                        <option value="TSM">
+                            TSM
+                        </option>
+
+                        <option value="TEI">
+                            TEI
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- JENIS KELAMIN -->
+                <div class="form-group">
+
+                    <label>
+                        🧑 Jenis Kelamin:
+                    </label>
+
+                    <div class="radio-group">
+
+                        <label>
+                            <input
+                                type="radio"
+                                id="L"
+                                name="jenis_kelamin"
+                                value="L"
+                            >
+
+                            Laki-laki
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                id="P"
+                                name="jenis_kelamin"
+                                value="P"
+                            >
+
+                            Perempuan
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                id="B"
+                                name="jenis_kelamin"
+                                value="B"
+                            >
+
+                            B
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BERAT BADAN -->
+                <div class="form-group">
+
+                    <label for="Bb">
+                        ⚖️ Berat Badan (BB):
+                    </label>
+
+                    <input
+                        type="number"
+                        id="Bb"
+                        name="Bb"
+                        placeholder="Contoh: 50"
+                    >
+
+                </div>
+
+
+                <!-- TINGGI BADAN -->
+                <div class="form-group">
+
+                    <label for="Tb">
+                        📏 Tinggi Badan (TB):
+                    </label>
+
+                    <input
+                        type="number"
+                        id="Tb"
+                        name="Tb"
+                        placeholder="Contoh: 165"
+                    >
+
+                </div>
+
+
+                <!-- HOBI -->
+                <div class="form-group">
+
+                    <label for="hobi">
+                        🎨 Hobi:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="hobi"
+                        name="hobi"
+                        placeholder="Contoh: Membaca, Musik, Gaming"
+                    >
+
+                </div>
+
+
+                <!-- NO HP -->
+                <div class="form-group">
+
+                    <label for="nohp">
+                        📱 No HP:
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="nohp"
+                        name="nohp"
+                        placeholder="Contoh: 08123456789"
+                    >
+
+                </div>
+
+
+                <!-- TOMBOL -->
+                <div class="form-button">
+
+                    <input
+                        type="submit"
+                        value="💾 Simpan Biodata"
+                    >
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- NAVIGASI -->
+        <div class="navigation">
+
+            <a
+                href="index.html"
+                class="back-link"
+            >
+                🏠 Kembali ke Portal
+            </a>
+
+            <a
+                href="hasil_biodata.html"
+                class="back-link"
+            >
+                📊 Hasil Biodata
+            </a>
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            Dibuat dengan ❤️ & Banyak Senyuman ✨
+
+        </footer>
+
+    </div>
+    
+
 </body>
+
 </html>
