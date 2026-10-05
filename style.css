@@ -1,6 +1,6 @@
 /* =====================================================
    STYLE.CSS
-   PORTAL BIODATA SISWA
+   WEBSITE BIODATA NISWATUN ROSIDAH
 ===================================================== */
 
 
@@ -17,41 +17,41 @@ html {
 }
 
 body {
+
     margin: 0;
+
     min-height: 100vh;
 
-    font-family: "Quicksand", sans-serif;
+    font-family:
+        "Quicksand",
+        Arial,
+        sans-serif;
 
-    color: #5f5660;
+    color: #625963;
 
-    background-color: #fff9fb;
+    background:
 
-    background-image:
         radial-gradient(
-            #ffb6c8 1px,
-            transparent 1px
-        );
+            circle at 20% 20%,
+            rgba(255, 210, 225, 0.7),
+            transparent 25%
+        ),
 
-    background-size: 28px 28px;
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(220, 205, 255, 0.6),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(255, 235, 190, 0.5),
+            transparent 30%
+        ),
+
+        #fff8fb;
 
     overflow-x: hidden;
-}
-
-
-/* =====================================================
-   CONTAINER
-===================================================== */
-
-.container,
-.page {
-    width: 92%;
-    max-width: 1100px;
-
-    margin: 35px auto;
-
-    position: relative;
-
-    z-index: 2;
 }
 
 
@@ -60,51 +60,48 @@ body {
 ===================================================== */
 
 .dekorasi {
+
     position: fixed;
 
     font-size: 35px;
 
-    opacity: 0.6;
+    opacity: 0.65;
 
     pointer-events: none;
 
-    z-index: 0;
+    z-index: 1;
 
     animation:
-        mengambang
+        dekorasiTerbang
         4s
         ease-in-out
         infinite;
 }
 
-.awan {
-    top: 40px;
-    left: 30px;
+.dekorasi-1 {
+    top: 8%;
+    left: 8%;
 }
 
-.bintang {
-    top: 90px;
-    right: 40px;
-
+.dekorasi-2 {
+    top: 15%;
+    right: 9%;
     animation-delay: 1s;
 }
 
-.bunga {
-    bottom: 50px;
-    left: 40px;
-
-    animation-delay: 1.5s;
-}
-
-.pita {
-    bottom: 80px;
-    right: 40px;
-
+.dekorasi-3 {
+    bottom: 15%;
+    left: 8%;
     animation-delay: 0.5s;
 }
 
+.dekorasi-4 {
+    bottom: 10%;
+    right: 8%;
+    animation-delay: 1.5s;
+}
 
-@keyframes mengambang {
+@keyframes dekorasiTerbang {
 
     0%,
     100% {
@@ -116,78 +113,93 @@ body {
     50% {
         transform:
             translateY(-12px)
-            rotate(5deg);
+            rotate(8deg);
     }
 }
 
 
 /* =====================================================
-   HEADER
+   INDEX
 ===================================================== */
 
-.header {
+.home-container {
+
+    width: 92%;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    padding: 45px 0 30px;
+
     text-align: center;
 
-    margin-bottom: 45px;
+    position: relative;
+
+    z-index: 2;
 }
 
 
 /* =====================================================
-   FOTO PROFIL HALAMAN UTAMA
+   FOTO PROFIL INDEX
 ===================================================== */
 
-.foto-container {
+.foto-profil {
 
     width: 230px;
+
     height: 230px;
 
-    margin: 0 auto 20px;
+    margin:
+        0 auto 22px;
 
-    padding: 8px;
+    padding: 7px;
 
     border-radius: 50%;
 
     background:
+
         linear-gradient(
             135deg,
-            #ff8faf,
-            #b994ff,
-            #ffe18a
+            #ff83a7,
+            #b58bea,
+            #ffd878
         );
 
     box-shadow:
-        0 15px 40px
+
+        0 18px 40px
         rgba(
             210,
-            150,
+            145,
             180,
-            0.35
+            0.30
         );
 
     animation:
-        fotoMengambang
+        fotoNaikTurun
         4s
         ease-in-out
         infinite;
 }
 
-
-.foto-container img {
+.foto-profil img {
 
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
 
     border-radius: 50%;
 
-    border: 5px solid white;
+    border:
+        6px solid white;
 
     display: block;
 }
 
-
-@keyframes fotoMengambang {
+@keyframes fotoNaikTurun {
 
     0%,
     100% {
@@ -195,64 +207,357 @@ body {
     }
 
     50% {
-        transform: translateY(-9px);
+        transform: translateY(-8px);
     }
 }
 
 
 /* =====================================================
-   JUDUL
+   NAMA INDEX
 ===================================================== */
 
-h1 {
+.nama {
 
-    margin: 18px 0 8px;
+    margin:
+        10px 0 3px;
 
     font-family:
         "Fredoka",
         sans-serif;
 
-    font-size: 45px;
+    font-size: 38px;
 
-    color: #f36f94;
+    font-weight: 700;
 
-    letter-spacing: 1px;
+    color: #ee7095;
+}
+
+.username {
+
+    margin:
+        0 0 18px;
+
+    color: #a58da0;
+
+    font-size: 15px;
+
+    font-weight: 600;
 }
 
 
-.subtitle {
+/* =====================================================
+   DESKRIPSI INDEX
+===================================================== */
 
-    display: inline-block;
+.deskripsi {
 
-    padding: 10px 22px;
+    margin:
+        0 auto 22px;
+
+    padding:
+        15px 20px;
+
+    max-width: 500px;
 
     background:
         rgba(
             255,
             255,
             255,
-            0.9
+            0.85
         );
 
     border:
-        1px solid #ffdbe5;
+        2px solid #ffe0ea;
 
-    border-radius: 30px;
+    border-radius: 20px;
 
-    color: #777;
+    box-shadow:
 
-    font-size: 15px;
+        0 8px 20px
+        rgba(
+            210,
+            165,
+            185,
+            0.12
+        );
+}
+
+.deskripsi p {
+
+    margin: 5px 0;
+
+    font-size: 14px;
 
     font-weight: 600;
 
+    color: #716871;
+}
+
+
+/* =====================================================
+   SOCIAL MEDIA
+===================================================== */
+
+.social-media {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin:
+        0 auto 22px;
+}
+
+.social {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    min-width: 145px;
+
+    padding:
+        11px 17px;
+
+    border-radius: 17px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
     box-shadow:
-        0 5px 15px
+
+        0 8px 18px
+        rgba(
+            180,
+            140,
+            160,
+            0.18
+        );
+
+    transition:
+        0.3s ease;
+}
+
+.social:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+
+        0 13px 23px
+        rgba(
+            180,
+            140,
+            160,
+            0.28
+        );
+}
+
+.social-icon {
+    font-size: 18px;
+}
+
+.instagram {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff9bb7,
+            #e66a9a
+        );
+}
+
+.tiktok {
+
+    background:
+        linear-gradient(
+            135deg,
+            #55505a,
+            #29262d
+        );
+}
+
+
+/* =====================================================
+   MENU INDEX
+===================================================== */
+
+.menu-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+    margin-top: 15px;
+}
+
+.menu-item {
+
+    width: 100%;
+
+    min-height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding:
+        13px 18px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.94
+        );
+
+    border:
+        2px solid #ffe0ea;
+
+    border-radius: 20px;
+
+    color: #625963;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    box-shadow:
+
+        0 8px 20px
+        rgba(
+            210,
+            165,
+            185,
+            0.13
+        );
+
+    transition:
+        0.3s ease;
+}
+
+.menu-item:hover {
+
+    transform:
+        translateY(-4px)
+        scale(1.01);
+
+    border-color:
+        #ffabc2;
+
+    background:
+        #fff2f6;
+
+    box-shadow:
+
+        0 13px 25px
         rgba(
             220,
-            170,
-            190,
-            0.15
+            145,
+            175,
+            0.22
         );
+}
+
+.menu-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background:
+        #fff0f5;
+
+    border-radius: 13px;
+
+    font-size: 21px;
+}
+
+.menu-arrow {
+
+    margin-left: auto;
+
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        #ffe4ed;
+
+    color:
+        #ed7094;
+
+    font-size: 17px;
+
+    transition:
+        0.3s ease;
+}
+
+.menu-item:hover
+.menu-arrow {
+
+    transform:
+        translateX(5px);
+
+    background:
+        #ffbdd0;
+
+    color: white;
+}
+
+
+/* =====================================================
+   PAGE UMUM
+===================================================== */
+
+.page {
+
+    width: 92%;
+
+    max-width: 1100px;
+
+    margin:
+        35px auto;
+
+    position: relative;
+
+    z-index: 2;
 }
 
 
@@ -301,14 +606,18 @@ h1 {
     margin-bottom: 25px;
 }
 
-
 .page-header h1 {
+
+    font-family:
+        "Fredoka",
+        sans-serif;
 
     font-size: 38px;
 
+    color: #f36f94;
+
     margin-bottom: 8px;
 }
-
 
 .page-header p {
 
@@ -326,7 +635,6 @@ h1 {
     margin-bottom: 18px;
 }
 
-
 .form-group label {
 
     display: block;
@@ -338,14 +646,14 @@ h1 {
     font-weight: 700;
 }
 
-
 input,
 select,
 textarea {
 
     width: 100%;
 
-    padding: 13px 15px;
+    padding:
+        13px 15px;
 
     border:
         2px solid #ffdce7;
@@ -367,7 +675,6 @@ textarea {
     transition: 0.25s ease;
 }
 
-
 input:focus,
 select:focus,
 textarea:focus {
@@ -383,7 +690,6 @@ textarea:focus {
             0.12
         );
 }
-
 
 textarea {
 
@@ -408,7 +714,6 @@ textarea {
     margin-top: 10px;
 }
 
-
 .radio-group label {
 
     display: flex;
@@ -417,7 +722,8 @@ textarea {
 
     gap: 7px;
 
-    padding: 10px 16px;
+    padding:
+        10px 16px;
 
     background: #fff5f8;
 
@@ -433,7 +739,6 @@ textarea {
     transition: 0.25s ease;
 }
 
-
 .radio-group label:hover {
 
     background: #ffe5ee;
@@ -441,7 +746,6 @@ textarea {
     transform:
         translateY(-2px);
 }
-
 
 .radio-group input {
 
@@ -468,19 +772,13 @@ textarea {
     margin-top: 25px;
 }
 
-
-.form-button button {
-
-    min-width: 180px;
-}
-
-
 button,
 input[type="submit"] {
 
     border: none;
 
-    padding: 13px 25px;
+    padding:
+        13px 25px;
 
     border-radius: 17px;
 
@@ -506,7 +804,6 @@ input[type="submit"] {
     transition: 0.3s ease;
 }
 
-
 button:hover,
 input[type="submit"]:hover {
 
@@ -522,7 +819,6 @@ input[type="submit"]:hover {
             0.3
         );
 }
-
 
 .btn-reset {
 
@@ -572,14 +868,10 @@ input[type="submit"]:hover {
         );
 }
 
-
-/* =====================================================
-   FOTO HASIL
-===================================================== */
-
 .hasil-foto {
 
     width: 170px;
+
     height: 170px;
 
     margin:
@@ -607,25 +899,21 @@ input[type="submit"]:hover {
         );
 }
 
-
 .hasil-foto img {
 
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
 
     border-radius: 50%;
 
-    border: 5px solid white;
+    border:
+        5px solid white;
 
     display: block;
 }
-
-
-/* =====================================================
-   JUDUL HASIL
-===================================================== */
 
 .judul-hasil {
 
@@ -633,7 +921,6 @@ input[type="submit"]:hover {
 
     margin-bottom: 25px;
 }
-
 
 .judul-hasil h1 {
 
@@ -649,7 +936,6 @@ input[type="submit"]:hover {
     color: #f36f94;
 }
 
-
 .judul-hasil p {
 
     margin: 0;
@@ -661,7 +947,7 @@ input[type="submit"]:hover {
 
 
 /* =====================================================
-   TABEL BIODATA
+   BIODATA TABLE
 ===================================================== */
 
 .biodata-table {
@@ -675,20 +961,19 @@ input[type="submit"]:hover {
         0 10px;
 }
 
-
 .biodata-table tr {
 
     background: #fff6f9;
 }
-
 
 .biodata-table td {
 
     padding: 15px;
 
     border: none;
-}
 
+    vertical-align: top;
+}
 
 .biodata-table tr td:first-child {
 
@@ -702,7 +987,6 @@ input[type="submit"]:hover {
     font-weight: 700;
 }
 
-
 .biodata-table tr td:nth-child(2) {
 
     width: 5%;
@@ -714,7 +998,6 @@ input[type="submit"]:hover {
     font-weight: 700;
 }
 
-
 .biodata-table tr td:last-child {
 
     border-radius:
@@ -725,7 +1008,6 @@ input[type="submit"]:hover {
     font-weight: 600;
 }
 
-
 .biodata-table tr:hover td {
 
     background: #ffeef4;
@@ -733,7 +1015,7 @@ input[type="submit"]:hover {
 
 
 /* =====================================================
-   TOMBOL HASIL
+   TOMBOL
 ===================================================== */
 
 .tombol-area {
@@ -751,12 +1033,12 @@ input[type="submit"]:hover {
     margin-top: 25px;
 }
 
-
 .tombol {
 
     display: inline-block;
 
-    padding: 13px 22px;
+    padding:
+        13px 22px;
 
     border-radius: 17px;
 
@@ -782,7 +1064,6 @@ input[type="submit"]:hover {
         );
 }
 
-
 .tombol:hover {
 
     transform:
@@ -798,7 +1079,6 @@ input[type="submit"]:hover {
         );
 }
 
-
 .tombol-form {
 
     background:
@@ -809,7 +1089,6 @@ input[type="submit"]:hover {
         );
 }
 
-
 .tombol-tabel {
 
     background:
@@ -819,7 +1098,6 @@ input[type="submit"]:hover {
             #7565df
         );
 }
-
 
 .tombol-home {
 
@@ -833,7 +1111,7 @@ input[type="submit"]:hover {
 
 
 /* =====================================================
-   LINK KEMBALI
+   NAVIGASI
 ===================================================== */
 
 .navigation {
@@ -851,12 +1129,12 @@ input[type="submit"]:hover {
     margin-top: 25px;
 }
 
-
 .back-link {
 
     display: inline-block;
 
-    padding: 12px 20px;
+    padding:
+        12px 20px;
 
     border-radius: 17px;
 
@@ -871,7 +1149,6 @@ input[type="submit"]:hover {
     transition: 0.3s;
 }
 
-
 .back-link:hover {
 
     background: #ffdce7;
@@ -882,121 +1159,7 @@ input[type="submit"]:hover {
 
 
 /* =====================================================
-   FOOTER
-===================================================== */
-
-footer {
-
-    text-align: center;
-
-    margin-top: 40px;
-
-    padding-bottom: 20px;
-
-    color: #aaa;
-
-    font-size: 13px;
-
-    font-weight: 600;
-}
-
-
-/* =====================================================
-   RESPONSIVE
-===================================================== */
-
-@media (max-width: 800px) {
-
-    .menu-list {
-
-        grid-template-columns: 1fr;
-    }
-
-    h1 {
-
-        font-size: 36px;
-    }
-
-    .foto-container {
-
-        width: 200px;
-        height: 200px;
-    }
-}
-
-
-@media (max-width: 600px) {
-
-    .hasil-card {
-
-        padding: 20px;
-    }
-
-
-    .hasil-foto {
-
-        width: 140px;
-        height: 140px;
-    }
-
-
-    .judul-hasil h1 {
-
-        font-size: 30px;
-    }
-
-
-    .biodata-table {
-
-        font-size: 13px;
-    }
-
-
-    .biodata-table td {
-
-        padding:
-            11px 8px;
-    }
-
-
-    .biodata-table
-    tr td:first-child {
-
-        width: 30%;
-    }
-}
-
-
-@media (max-width: 500px) {
-
-    .container,
-    .page {
-
-        width: 94%;
-    }
-
-
-    .social {
-
-        width: 100%;
-        max-width: 260px;
-    }
-
-
-    .card {
-
-        padding: 20px;
-    }
-
-
-    .dekorasi {
-
-        font-size: 25px;
-    }
-}
-
-/* =====================================================
-   TABEL BIODATA
+   TABEL CARD
 ===================================================== */
 
 .tabel-card {
@@ -1030,12 +1193,12 @@ footer {
         );
 }
 
-
 .tabel-card h2 {
 
     text-align: center;
 
     margin-top: 0;
+
     margin-bottom: 8px;
 
     font-family:
@@ -1046,7 +1209,6 @@ footer {
 
     font-size: 27px;
 }
-
 
 .tabel-keterangan {
 
@@ -1063,7 +1225,7 @@ footer {
 
 
 /* =====================================================
-   RESPONSIVE TABLE
+   TABLE RESPONSIVE
 ===================================================== */
 
 .table-responsive {
@@ -1077,7 +1239,7 @@ footer {
 
 
 /* =====================================================
-   TABEL BIODATA PERTAMA
+   TABEL BIODATA
 ===================================================== */
 
 .tabel-biodata {
@@ -1092,7 +1254,6 @@ footer {
 
     overflow: hidden;
 }
-
 
 .tabel-biodata th {
 
@@ -1114,21 +1275,6 @@ footer {
         sans-serif;
 }
 
-
-.tabel-biodata th:first-child {
-
-    border-radius:
-        15px 0 0 0;
-}
-
-
-.tabel-biodata th:last-child {
-
-    border-radius:
-        0 15px 0 0;
-}
-
-
 .tabel-biodata td {
 
     padding: 14px;
@@ -1143,14 +1289,10 @@ footer {
     font-weight: 600;
 }
 
-
 .tabel-biodata tbody tr:hover td {
 
     background: #fff0f5;
-
-    transition: 0.2s;
 }
-
 
 .tabel-biodata td:first-child {
 
@@ -1160,9 +1302,6 @@ footer {
 
     width: 35%;
 }
-
-
-/* STATUS */
 
 .tabel-biodata .status-row th {
 
@@ -1176,9 +1315,6 @@ footer {
             #b994ff,
             #8c78df
         );
-
-    border-radius:
-        0 0 15px 15px;
 }
 
 
@@ -1198,7 +1334,6 @@ footer {
 
     overflow: hidden;
 }
-
 
 .tabel-rekap th {
 
@@ -1220,10 +1355,10 @@ footer {
         sans-serif;
 }
 
-
 .tabel-rekap td {
 
-    padding: 13px 15px;
+    padding:
+        13px 15px;
 
     border-bottom:
         1px solid #e7dce1;
@@ -1235,12 +1370,10 @@ footer {
     background: #fffafd;
 }
 
-
 .tabel-rekap tbody tr:hover td {
 
     background: #fff0f5;
 }
-
 
 .tabel-rekap .kategori {
 
@@ -1257,7 +1390,6 @@ footer {
 
     text-align: center;
 }
-
 
 .tengah {
 
@@ -1284,7 +1416,6 @@ footer {
     font-size: 14px;
 }
 
-
 .tabel-kompleks th {
 
     padding: 15px;
@@ -1305,10 +1436,10 @@ footer {
         sans-serif;
 }
 
-
 .tabel-kompleks td {
 
-    padding: 13px 14px;
+    padding:
+        13px 14px;
 
     border:
         1px solid #d8d2dc;
@@ -1318,12 +1449,10 @@ footer {
     vertical-align: middle;
 }
 
-
 .tabel-kompleks tr:hover td {
 
     background: #fff5f8;
 }
-
 
 .tabel-kompleks .kategori {
 
@@ -1337,7 +1466,6 @@ footer {
     text-align: center;
 }
 
-
 .tabel-kompleks .sub {
 
     font-weight: 600;
@@ -1345,14 +1473,12 @@ footer {
     color: #555;
 }
 
-
 .tabel-kompleks .atribut {
 
     font-weight: 700;
 
     color: #555;
 }
-
 
 .tabel-kompleks .hasil {
 
@@ -1383,9 +1509,9 @@ footer {
 
     padding: 8px !important;
 
-    background: #fafffa !important;
+    background:
+        #fafffa !important;
 }
-
 
 .split-wrapper {
 
@@ -1398,7 +1524,6 @@ footer {
 
     background: #fafffa;
 }
-
 
 .split-label {
 
@@ -1413,7 +1538,6 @@ footer {
     text-align: center;
 }
 
-
 .split-item {
 
     border:
@@ -1421,7 +1545,8 @@ footer {
 
     border-radius: 8px;
 
-    padding: 8px 10px;
+    padding:
+        8px 10px;
 
     margin-bottom: 7px;
 
@@ -1430,21 +1555,17 @@ footer {
     color: #555;
 }
 
-
 .split-item:last-child {
-
     margin-bottom: 0;
 }
 
-
 .split-item b {
-
     color: #348a55;
 }
 
 
 /* =====================================================
-   KETERANGAN MERGE & SPLIT
+   KETERANGAN
 ===================================================== */
 
 .keterangan {
@@ -1466,34 +1587,178 @@ footer {
 
 
 /* =====================================================
-   RESPONSIVE TABEL
+   FOOTER
+===================================================== */
+
+footer {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+    padding-bottom: 20px;
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.home-footer {
+
+    margin-top: 30px;
+
+    padding-bottom: 15px;
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.home-footer p {
+    margin: 5px 0;
+}
+
+.footer-small {
+
+    font-size: 12px;
+
+    color: #c1aeb8;
+}
+
+
+/* =====================================================
+   RESPONSIVE
 ===================================================== */
 
 @media (max-width: 700px) {
 
     .tabel-card {
-
         padding: 18px;
     }
 
-
     .tabel-card h2 {
-
         font-size: 23px;
     }
 
-
     .table-responsive {
-
         border-radius: 12px;
     }
-
 
     .tabel-biodata,
     .tabel-rekap,
     .tabel-kompleks {
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .home-container {
+
+        width: 90%;
+
+        padding-top: 35px;
+    }
+
+    .foto-profil {
+
+        width: 190px;
+
+        height: 190px;
+    }
+
+    .nama {
+
+        font-size: 31px;
+    }
+
+    .deskripsi {
+
+        padding:
+            13px 15px;
+    }
+
+    .social-media {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .social {
+
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+    .menu-item {
+
+        min-height: 62px;
+
+        font-size: 15px;
+    }
+
+    .dekorasi {
+
+        font-size: 25px;
+    }
+
+    .hasil-card {
+
+        padding: 20px;
+    }
+
+    .hasil-foto {
+
+        width: 140px;
+
+        height: 140px;
+    }
+
+    .judul-hasil h1 {
+
+        font-size: 30px;
+    }
+
+    .biodata-table {
 
         font-size: 13px;
+    }
+
+    .biodata-table td {
+
+        padding:
+            11px 8px;
+    }
+
+    .page {
+
+        width: 94%;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .card {
+
+        padding: 20px;
+    }
+
+    .page-header h1 {
+
+        font-size: 30px;
+    }
+
+    .dekorasi {
+
+        font-size: 22px;
     }
 
 }
