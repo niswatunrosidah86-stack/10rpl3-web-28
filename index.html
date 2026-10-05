@@ -2,7 +2,6 @@
 <html lang="id">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta
@@ -12,11 +11,8 @@
 
     <title>Portal Proyekku 🌸</title>
 
-
-    <!-- GOOGLE FONT -->
-
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
@@ -24,787 +20,27 @@
         rel="stylesheet"
     >
 
-
-    <style>
-
-        /* =========================
-           DASAR
-        ========================= */
-
-        * {
-            box-sizing: border-box;
-        }
-
-
-        body {
-
-            margin: 0;
-
-            min-height: 100vh;
-
-            font-family: "Quicksand", sans-serif;
-
-            color: #5f5660;
-
-            background-color: #fff9fb;
-
-            background-image:
-                radial-gradient(
-                    #ffb6c8 1px,
-                    transparent 1px
-                );
-
-            background-size: 28px 28px;
-
-            overflow-x: hidden;
-        }
-
-
-        /* =========================
-           DEKORASI
-        ========================= */
-
-        .dekorasi {
-
-            position: fixed;
-
-            font-size: 35px;
-
-            opacity: 0.6;
-
-            pointer-events: none;
-
-            z-index: 0;
-
-            animation:
-                mengambang
-                4s
-                ease-in-out
-                infinite;
-        }
-
-
-        .awan {
-
-            top: 40px;
-
-            left: 30px;
-        }
-
-
-        .bintang {
-
-            top: 80px;
-
-            right: 40px;
-
-            animation-delay: 1s;
-        }
-
-
-        .bunga {
-
-            bottom: 50px;
-
-            left: 40px;
-
-            animation-delay: 1.5s;
-        }
-
-
-        .pita {
-
-            bottom: 80px;
-
-            right: 40px;
-
-            animation-delay: 0.5s;
-        }
-
-
-        @keyframes mengambang {
-
-            0%,
-            100% {
-
-                transform:
-                    translateY(0)
-                    rotate(0deg);
-            }
-
-
-            50% {
-
-                transform:
-                    translateY(-12px)
-                    rotate(5deg);
-            }
-
-        }
-
-
-        /* =========================
-           CONTAINER
-        ========================= */
-
-        .container {
-
-            width: 92%;
-
-            max-width: 1050px;
-
-            margin: 35px auto;
-
-            position: relative;
-
-            z-index: 2;
-        }
-
-
-        /* =========================
-           HEADER
-        ========================= */
-
-        header {
-
-            text-align: center;
-
-            margin-bottom: 40px;
-        }
-
-
-        /* =========================
-           FOTO PROFIL
-        ========================= */
-
-        .foto-container {
-
-            width: 150px;
-
-            height: 150px;
-
-            margin: 0 auto 10px;
-
-            padding: 6px;
-
-            border-radius: 50%;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #ff9fbb,
-                    #c5a7ff,
-                    #ffe18a
-                );
-
-            box-shadow:
-                0 12px 30px
-                rgba(
-                    210,
-                    160,
-                    180,
-                    0.35
-                );
-
-            animation:
-                fotoMengambang
-                4s
-                ease-in-out
-                infinite;
-        }
-
-
-        /* FOTO ASLI */
-
-        .foto-container img {
-
-            width: 100%;
-
-            height: 100%;
-
-            object-fit: cover;
-
-            border-radius: 50%;
-
-            border: 4px solid white;
-
-            display: block;
-        }
-
-
-        @keyframes fotoMengambang {
-
-            0%,
-            100% {
-
-                transform:
-                    translateY(0);
-            }
-
-
-            50% {
-
-                transform:
-                    translateY(-8px);
-            }
-
-        }
-
-
-        /* =========================
-           BADGE
-        ========================= */
-
-        .badge {
-
-            display: inline-block;
-
-            margin-top: -5px;
-
-            padding: 8px 17px;
-
-            background: #ffe08a;
-
-            border: 3px solid white;
-
-            border-radius: 25px;
-
-            font-family: "Fredoka", sans-serif;
-
-            font-weight: 600;
-
-            color: #6b5b35;
-
-            box-shadow:
-                0 5px 12px
-                rgba(
-                    200,
-                    170,
-                    100,
-                    0.2
-                );
-
-            transform:
-                rotate(3deg);
-        }
-
-
-        /* =========================
-           JUDUL
-        ========================= */
-
-        h1 {
-
-            margin: 18px 0 8px;
-
-            font-family: "Fredoka", sans-serif;
-
-            font-size: 42px;
-
-            color: #f36f94;
-
-            letter-spacing: 1px;
-        }
-
-
-        .subtitle {
-
-            display: inline-block;
-
-            padding: 10px 20px;
-
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.9
-                );
-
-            border:
-                1px solid
-                #ffdbe5;
-
-            border-radius: 30px;
-
-            color: #777;
-
-            font-size: 14px;
-
-            font-weight: 600;
-
-            box-shadow:
-                0 5px 15px
-                rgba(
-                    220,
-                    170,
-                    190,
-                    0.15
-                );
-        }
-
-
-        /* =========================
-           MENU
-        ========================= */
-
-        .menu-list {
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap: 25px;
-        }
-
-
-        /* =========================
-           KARTU MENU
-        ========================= */
-
-        .menu-item {
-
-            position: relative;
-
-            overflow: hidden;
-
-            display: block;
-
-            padding: 28px 22px;
-
-            text-align: center;
-
-            text-decoration: none;
-
-            color: #555;
-
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    0.95
-                );
-
-            border:
-                3px solid
-                #fff0f5;
-
-            border-radius: 30px;
-
-            box-shadow:
-                0 10px 25px
-                rgba(
-                    220,
-                    170,
-                    190,
-                    0.2
-                );
-
-            transition:
-                all 0.3s ease;
-        }
-
-
-        .menu-item:hover {
-
-            transform:
-                translateY(-10px)
-                scale(1.02);
-
-            box-shadow:
-                0 20px 35px
-                rgba(
-                    220,
-                    170,
-                    190,
-                    0.3
-                );
-        }
-
-
-        /* =========================
-           HIASAN KARTU
-        ========================= */
-
-        .menu-item::before {
-
-            content: "";
-
-            position: absolute;
-
-            width: 100px;
-
-            height: 100px;
-
-            top: -45px;
-
-            right: -45px;
-
-            border-radius: 50%;
-
-            background: #ffe5ee;
-
-            transition:
-                transform 0.5s ease;
-        }
-
-
-        .menu-item:hover::before {
-
-            transform:
-                scale(2);
-        }
-
-
-        /* =========================
-           ICON
-        ========================= */
-
-        .icon {
-
-            position: relative;
-
-            z-index: 1;
-
-            width: 70px;
-
-            height: 70px;
-
-            margin:
-                0 auto 15px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            font-size: 34px;
-
-            border-radius: 20px;
-
-            background: #fff0f5;
-
-            border:
-                2px solid
-                #ffd9e5;
-
-            transition:
-                transform 0.3s ease;
-        }
-
-
-        .menu-item:hover .icon {
-
-            transform:
-                rotate(10deg)
-                scale(1.08);
-        }
-
-
-        /* =========================
-           TAG
-        ========================= */
-
-        .tag {
-
-            position: relative;
-
-            z-index: 1;
-
-            display: inline-block;
-
-            padding: 6px 12px;
-
-            border-radius: 20px;
-
-            font-size: 12px;
-
-            font-weight: 700;
-
-            margin-bottom: 8px;
-        }
-
-
-        .pink {
-
-            background: #fff0f5;
-
-            color: #ed5f86;
-        }
-
-
-        .purple {
-
-            background: #f3ebff;
-
-            color: #9167d8;
-        }
-
-
-        .yellow {
-
-            background: #fff4d6;
-
-            color: #d89a20;
-        }
-
-
-        /* =========================
-           JUDUL KARTU
-        ========================= */
-
-        .menu-item h2 {
-
-            position: relative;
-
-            z-index: 1;
-
-            margin: 8px 0;
-
-            font-family: "Fredoka", sans-serif;
-
-            font-size: 23px;
-
-            color: #4e4850;
-        }
-
-
-        /* =========================
-           DESKRIPSI
-        ========================= */
-
-        .desc {
-
-            position: relative;
-
-            z-index: 1;
-
-            min-height: 70px;
-
-            margin: 10px 0;
-
-            color: #777;
-
-            font-size: 14px;
-
-            line-height: 1.6;
-        }
-
-
-        /* =========================
-           TOMBOL
-        ========================= */
-
-        .btn {
-
-            position: relative;
-
-            z-index: 1;
-
-            display: block;
-
-            margin-top: 18px;
-
-            padding: 13px;
-
-            border-radius: 17px;
-
-            color: white;
-
-            font-family: "Fredoka", sans-serif;
-
-            font-weight: 600;
-
-            font-size: 15px;
-        }
-
-
-        .btn-pink {
-
-            background:
-                linear-gradient(
-                    90deg,
-                    #ff82a3,
-                    #ff668e
-                );
-
-            box-shadow:
-                0 6px 15px
-                rgba(
-                    255,
-                    100,
-                    140,
-                    0.25
-                );
-        }
-
-
-        .btn-purple {
-
-            background:
-                linear-gradient(
-                    90deg,
-                    #a87be8,
-                    #7565df
-                );
-
-            box-shadow:
-                0 6px 15px
-                rgba(
-                    130,
-                    100,
-                    220,
-                    0.25
-                );
-        }
-
-
-        .btn-yellow {
-
-            background:
-                linear-gradient(
-                    90deg,
-                    #f5bf4c,
-                    #f39b3f
-                );
-
-            box-shadow:
-                0 6px 15px
-                rgba(
-                    230,
-                    160,
-                    50,
-                    0.25
-                );
-        }
-
-
-        /* =========================
-           FOOTER
-        ========================= */
-
-        footer {
-
-            text-align: center;
-
-            margin-top: 35px;
-
-            padding-bottom: 20px;
-
-            color: #aaa;
-
-            font-size: 13px;
-
-            font-weight: 600;
-        }
-
-
-        /* =========================
-           TABLET
-        ========================= */
-
-        @media (max-width: 800px) {
-
-            .menu-list {
-
-                grid-template-columns: 1fr;
-            }
-
-
-            h1 {
-
-                font-size: 34px;
-            }
-
-        }
-
-
-        /* =========================
-           HP
-        ========================= */
-
-        @media (max-width: 500px) {
-
-            .foto-container {
-
-                width: 125px;
-
-                height: 125px;
-            }
-
-
-            h1 {
-
-                font-size: 30px;
-            }
-
-
-            .subtitle {
-
-                font-size: 12px;
-
-                max-width: 90%;
-            }
-
-
-            .dekorasi {
-
-                font-size: 25px;
-            }
-
-        }
-
-    </style>
-
+    <!-- CSS EKSTERNAL -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
 
+    <!-- Dekorasi -->
+    <div class="dekorasi awan">☁️</div>
+    <div class="dekorasi bintang">⭐</div>
+    <div class="dekorasi bunga">🌸</div>
+    <div class="dekorasi pita">🎀</div>
 
-    <!-- =========================
-         DEKORASI
-    ========================= -->
-
-    <div class="dekorasi awan">
-        ☁️
-    </div>
-
-
-    <div class="dekorasi bintang">
-        ⭐
-    </div>
-
-
-    <div class="dekorasi bunga">
-        🌸
-    </div>
-
-
-    <div class="dekorasi pita">
-        🎀
-    </div>
-
-
-
-    <!-- =========================
-         CONTAINER
-    ========================= -->
 
     <div class="container">
 
+        <!-- ================= HEADER ================= -->
 
-        <!-- =========================
-             HEADER
-        ========================= -->
+        <header class="header">
 
-        <header>
-
-
-            <!-- FOTO PROFIL -->
+            <!-- FOTO PROFIL LEBIH BESAR -->
 
             <div class="foto-container">
 
@@ -816,198 +52,164 @@
             </div>
 
 
-            <!-- UCAPAN -->
+            <!-- BADGE -->
 
             <div class="badge">
-
                 ✨ Halo! 🐾
-
             </div>
 
 
             <!-- JUDUL -->
 
             <h1>
-
-                Portal Proyekku ✨
-
+                Portal Proyekku 🌸
             </h1>
 
 
-            <!-- KETERANGAN -->
+            <p class="subtitle">
+                Selamat datang di website saya!
+                🎀
+            </p>
 
-            <div class="subtitle">
 
-                Pilih salah satu proyek di bawah
-                untuk membukanya! 🎀
+            <!-- ================= SOCIAL MEDIA ================= -->
+
+            <div class="social-media">
+
+                <a
+                    href="https://www.instagram.com/nwrns_n1n15"
+                    target="_blank"
+                    class="social instagram"
+                >
+                    📷 Instagram
+                </a>
+
+
+                <a
+                    href="https://www.tiktok.com/@sininis4"
+                    target="_blank"
+                    class="social tiktok"
+                >
+                    🎵 TikTok
+                </a>
 
             </div>
-
 
         </header>
 
 
 
-        <!-- =========================
-             DAFTAR MENU
-        ========================= -->
+        <!-- ================= MENU ================= -->
 
-        <div class="menu-list">
+        <main>
 
+            <div class="menu-list">
 
-            <!-- =====================
-                 FORM BIODATA
-            ====================== -->
 
-            <a
-                href="form_biodata.html"
-                class="menu-item"
-            >
+                <!-- FORM BIODATA -->
 
-                <div class="icon">
+                <a
+                    href="form_biodata.html"
+                    class="menu-item"
+                >
 
-                    📋
+                    <div class="icon">
+                        📋
+                    </div>
 
-                </div>
+                    <span class="tag pink">
+                        Formulir 📝
+                    </span>
 
+                    <h2>
+                        Form Biodata
+                    </h2>
 
-                <span class="tag pink">
+                    <p class="desc">
+                        Halaman untuk mengisi
+                        data diri dengan mudah,
+                        rapi, dan sederhana.
+                    </p>
 
-                    Formulir 📝
+                    <div class="btn btn-pink">
+                        Buka Proyek 🚀
+                    </div>
 
-                </span>
+                </a>
 
 
-                <h2>
 
-                    Form Biodata
+                <!-- HASIL BIODATA -->
 
-                </h2>
+                <a
+                    href="hasil_biodata.html"
+                    class="menu-item"
+                >
 
+                    <div class="icon">
+                        📊
+                    </div>
 
-                <p class="desc">
+                    <span class="tag purple">
+                        Tampilan Data 📇
+                    </span>
 
-                    Halaman untuk mengisi
-                    data diri dengan mudah,
-                    rapi, dan sederhana.
+                    <h2>
+                        Hasil Biodata
+                    </h2>
 
-                </p>
+                    <p class="desc">
+                        Melihat hasil biodata
+                        yang sudah dimasukkan
+                        ke dalam sistem.
+                    </p>
 
+                    <div class="btn btn-purple">
+                        Buka Proyek 🚀
+                    </div>
 
-                <div class="btn btn-pink">
+                </a>
 
-                    Buka Proyek 🚀
 
-                </div>
 
-            </a>
+                <!-- TABEL -->
 
+                <a
+                    href="tabel.html"
+                    class="menu-item"
+                >
 
+                    <div class="icon">
+                        🔎
+                    </div>
 
-            <!-- =====================
-                 HASIL BIODATA
-            ====================== -->
+                    <span class="tag yellow">
+                        Tabel Data 📊
+                    </span>
 
-            <a
-                href="hasil_biodata.html"
-                class="menu-item"
-            >
+                    <h2>
+                        Tabel Data
+                    </h2>
 
-                <div class="icon">
+                    <p class="desc">
+                        Melihat data dalam
+                        bentuk tabel yang rapi
+                        dan mudah dibaca.
+                    </p>
 
-                    📊
+                    <div class="btn btn-yellow">
+                        Buka Proyek 🚀
+                    </div>
 
-                </div>
+                </a>
 
+            </div>
 
-                <span class="tag purple">
+        </main>
 
-                    Tampilan Data 📇
 
-                </span>
 
-
-                <h2>
-
-                    Hasil Biodata
-
-                </h2>
-
-
-                <p class="desc">
-
-                    Melihat hasil biodata
-                    yang sudah dimasukkan
-                    ke dalam sistem.
-
-                </p>
-
-
-                <div class="btn btn-purple">
-
-                    Buka Proyek 🚀
-
-                </div>
-
-            </a>
-
-
-
-            <!-- =====================
-                 TABEL DATA
-            ====================== -->
-
-            <a
-                href="tabel.html"
-                class="menu-item"
-            >
-
-                <div class="icon">
-
-                    🔎
-
-                </div>
-
-
-                <span class="tag yellow">
-
-                    Tabel Interaktif 📊
-
-                </span>
-
-
-                <h2>
-
-                    Tabel Data
-
-                </h2>
-
-
-                <p class="desc">
-
-                    Melihat data dalam
-                    bentuk tabel yang rapi
-                    dan mudah dibaca.
-
-                </p>
-
-
-                <div class="btn btn-yellow">
-
-                    Buka Proyek 🚀
-
-                </div>
-
-            </a>
-
-
-        </div>
-
-
-
-        <!-- =========================
-             FOOTER
-        ========================= -->
+        <!-- ================= FOOTER ================= -->
 
         <footer>
 
@@ -1016,9 +218,7 @@
 
         </footer>
 
-
     </div>
-
 
 </body>
 
